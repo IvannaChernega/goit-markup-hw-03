@@ -1,9 +1,3 @@
-/* білий #FFFFFF */
-/* цвет вторичний текст #212121*/
-/* цвет тексту #757575 */
-/* акцент  ссилки #2196F3 */
-/* колір лого #000000 #2196F3 */
-/* колір футерадресси rgba(255, 255, 255, 0.6) */
 :root {
   --primary-font: "Roboto";
   --primary-text-color: #212121;
@@ -33,7 +27,6 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
-  /* ?pading */
   padding-left: 0;
 }
 img {
@@ -125,6 +118,8 @@ a {
 }
 .auth-nav .link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 
   color: var(--secondary-text-color);
   font-weight: 500;
@@ -146,8 +141,8 @@ a {
 .hero {
   display: block;
   text-align: center;
-  padding-top: 280px;
-  padding-bottom: 280px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 
   background: var(--background-color);
 }
@@ -227,8 +222,8 @@ a {
   display: block;
   text-align: center;
   padding-top: 280px;
-  padding-bottom: 280px;
 }
+
 .title-box {
   font-weight: 700;
   font-size: 36px;
@@ -237,7 +232,7 @@ a {
   letter-spacing: 0.03em;
 
   font-weight: bold;
-  text-transform: uppercase;
+
   min-width: 336px;
   margin-left: auto;
   margin-right: auto;
@@ -255,14 +250,20 @@ a {
 }
 
 /* -------Наша команда -------*/
-.section .team {
-  background-color: #f5f4fa;
-}
+
 .team-title {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+
+  font-weight: bold;
+
+  min-width: 336px;
+  margin-top: 94px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--primary-text-color);
 }
@@ -270,19 +271,17 @@ a {
   display: flex;
   gap: 30px;
   margin-top: 50px;
+  padding-bottom: 94px;
   flex-wrap: wrap;
+  background-color: #f5f4fa;
+}
+.team-item {
+  background: #ffffff;
 }
 .team-item {
   flex-basis: calc(100%-90 / 4);
 }
-.user-item {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
 
-  color: var(--secondary-text-color);
-}
 .text-name {
   font-weight: 500;
   font-size: 16px;
@@ -310,11 +309,10 @@ a {
   padding-bottom: 60px;
   background-color: #2f303a;
 }
-.footer-contact {
-  display: inline-block;
-  /* align-items: center; */
-}
+
 .web-logo-footer {
+  display: flex;
+  margin-bottom: 20px;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -334,7 +332,7 @@ a {
 .address-link {
   display: inline-block;
   margin-bottom: 9px;
-  margin-top: 20px;
+
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -343,8 +341,7 @@ a {
 }
 .footer-nav {
   display: inline-block;
-  margin-bottom: 9px;
-  font-style: normal;
+
   font-size: 14px;
   line-height: 1.71;
 
@@ -363,23 +360,23 @@ a {
   color: rgba(255, 255, 255, 0.6);
   /* outline: 1px solid tomato; */
 }
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 
 /* --------------  ПОРТФОЛИО    ------------ */
 /* -----filter------ */
 .page-header {
   border-bottom: 1px solid #ececec;
 }
-.section-portfolio {
-  margin-top: 100px;
-}
+
 .filter {
   display: flex;
-
+  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
-  margin: 30px;
 }
 
 address {
@@ -393,9 +390,7 @@ element.style {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
-
   letter-spacing: 0.03em;
-
   color: #ffffff;
 }
 
@@ -424,24 +419,31 @@ element.style {
 }
 
 /* --------projects------- */
-.project-card-list {
+.projects {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
+.project-item {
+}
+.project-card {
+  width: 370px;
+  padding-left: 24px;
+  padding-top: 15px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 
-.project-card-item {
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
+.project {
   flex-basis: calc(100%-60px / 3);
 }
-/* .project-card {
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-} */
-.project-item {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 4px;
-  padding-top: 20px;
+
+.project-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -451,9 +453,6 @@ element.style {
 }
 
 .project-type {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
   line-height: 1.88;
   letter-spacing: 0.03em;
 
