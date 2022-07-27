@@ -198,6 +198,10 @@ a {
   display: flex;
   gap: 30px;
 }
+.feature-item {
+  width: 270px;
+}
+
 .feature-title {
   margin-bottom: 10px;
   font-weight: 700;
@@ -215,13 +219,12 @@ a {
 
   color: var(--secondary-text-color);
 }
-.feature-text 
+
 /* --------Чим ми займаємося---------- */
 
 .section {
   display: block;
   text-align: center;
-  padding-top: 280px;
 }
 
 .title-box {
@@ -257,21 +260,24 @@ a {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-
   font-weight: bold;
 
   min-width: 336px;
-  margin-top: 94px;
   margin-left: auto;
   margin-right: auto;
 
   color: var(--primary-text-color);
 }
+.section-team {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: #f5f4fa;
+}
 .team {
   display: flex;
   gap: 30px;
   margin-top: 50px;
-  padding-bottom: 94px;
+
   flex-wrap: wrap;
   background-color: #f5f4fa;
 }
@@ -331,8 +337,6 @@ a {
 
 .address-link {
   display: inline-block;
-  margin-bottom: 9px;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -351,7 +355,7 @@ a {
 
 .tel-nav {
   display: inline-block;
-  margin-top: 9px;
+  /* margin-top: 9px; */
   text-transform: uppercase;
   font-style: normal;
   font-size: 14px;
@@ -360,8 +364,8 @@ a {
   color: rgba(255, 255, 255, 0.6);
   /* outline: 1px solid tomato; */
 }
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
+.address-item {
+  margin: 9px;
 }
 
 /* --------------  ПОРТФОЛИО    ------------ */
@@ -427,7 +431,7 @@ element.style {
 .project-item {
 }
 .project-card {
-  width: 370px;
+  /* width: 370px; */
   padding-left: 24px;
   padding-top: 15px;
   padding-right: 24px;
@@ -447,7 +451,7 @@ element.style {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
 }
