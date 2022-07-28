@@ -181,7 +181,7 @@ a {
   background-color: var(--accent-color2);
 }
 
-/* -----------преимущества ------------*/
+/* -----------переваги ------------*/
 .hidden {
   position: absolute;
   white-space: nowrap;
@@ -221,12 +221,9 @@ a {
 }
 
 /* --------Чим ми займаємося---------- */
-
-.section {
-  display: block;
-  text-align: center;
+.section-work {
+  padding-bottom: 94px;
 }
-
 .title-box {
   font-weight: 700;
   font-size: 36px;
@@ -269,8 +266,8 @@ a {
   color: var(--primary-text-color);
 }
 .section-team {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 .team {
@@ -317,7 +314,7 @@ a {
 }
 
 .web-logo-footer {
-  display: flex;
+  display: block;
   margin-bottom: 20px;
   font-family: "Raleway";
   font-weight: 700;
@@ -364,8 +361,8 @@ a {
   color: rgba(255, 255, 255, 0.6);
   /* outline: 1px solid tomato; */
 }
-.address-item {
-  margin: 9px;
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* --------------  ПОРТФОЛИО    ------------ */
@@ -382,7 +379,6 @@ a {
   flex-wrap: wrap;
   gap: 8px;
 }
-
 address {
   font-style: normal;
 }
